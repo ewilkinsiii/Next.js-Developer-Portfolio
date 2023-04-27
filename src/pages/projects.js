@@ -6,6 +6,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import project2 from "../../public/images/projects/agency-website-cover-image.jpg";
+import project3 from "../../public/images/projects/devdreaming.jpg";
+import project4 from "../../public/images/projects/fashion-studio-website.jpg";
+import project5 from "../../public/images/projects/nft-collection-website-cover-image.jpg";
+import project6 from "../../public/images/projects/portfolio-cover-image.jpg";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -14,9 +19,10 @@ const FeatureProject = ({ type, title, summary, img, link, github }) => {
   return (
     <article
       className="w-full flex items-center justify-between relative rounded-br-2xl
-        rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12"
+        rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12
+        border-r-4 border-b-4"
     >
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
+      {/* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" /> */}
       <Link
         href={link}
         target="_blank"
@@ -62,9 +68,9 @@ const Project = ({ type, title, img, link, github }) => {
   return (
     <article
       className="w-full flex flex-col items-center justify-center 
-    rounded-2xl border border-solid border-dark bg-light p-6 relative"
+    rounded-2xl border border-solid border-dark bg-light p-6 relative border-r-4 border-b-4"
     >
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" />
+      {/* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" /> */}
       <Link
         href={link}
         target="_blank"
@@ -86,7 +92,9 @@ const Project = ({ type, title, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold capitalize">
+            {title}
+          </h2>
         </Link>
         <div className="w-full mt-2 flex items-center justify-between">
           <Link
@@ -138,9 +146,9 @@ const projects = () => {
 
             <div className="col-span-6">
               <Project
-                type="Featured Project"
-                title="Crypto Screener Application"
-                img={project1}
+                type="Agency website cover"
+                title="React Portfolio Website"
+                img={project2}
                 link="/"
                 github="www.github.com"
               />
@@ -148,9 +156,9 @@ const projects = () => {
 
             <div className="col-span-6">
               <Project
-                type="Featured Project"
-                title="Crypto Screener Application"
-                img={project1}
+                type="Project"
+                title="dev dreaming"
+                img={project3}
                 link="/"
                 github="www.github.com"
               />
@@ -159,11 +167,10 @@ const projects = () => {
             <div className="col-span-12">
               <FeatureProject
                 type="Featured Project"
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                    local currency."
-                img={project1}
+                title="React Portfolio Website"
+                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
+                page transitions, cool background effects, unique design and it is mobile responsive.."
+                img={project6}
                 link="/"
                 github="www.github.com"
               />
@@ -171,9 +178,9 @@ const projects = () => {
 
             <div className="col-span-6">
               <Project
-                type="Featured Project"
-                title="Crypto Screener Application"
-                img={project1}
+                type="Project"
+                title="fashion studio website"
+                img={project4}
                 link="/"
                 github="www.github.com"
               />
@@ -181,9 +188,9 @@ const projects = () => {
 
             <div className="col-span-6">
               <Project
-                type="Featured Project"
-                title="Crypto Screener Application"
-                img={project1}
+                type="Project"
+                title="nft collection website"
+                img={project5}
                 link="/"
                 github="www.github.com"
               />

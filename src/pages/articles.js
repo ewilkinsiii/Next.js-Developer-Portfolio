@@ -14,6 +14,7 @@ import article7 from "../../public/images/articles/What is higher order componen
 import article8 from "../../public/images/articles/What is Redux with easy explanation.png";
 
 import { motion, useMotionValue } from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -127,6 +128,7 @@ const articles = () => {
         <title>Eugene Wilkins | Articles Page</title>
         <meta name="articles" content="blog articles" />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText

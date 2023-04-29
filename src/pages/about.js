@@ -78,6 +78,10 @@ const about = () => {
                 src={profilePic}
                 alt="Eugene Wilkins"
                 className="w-full h-auto rounded-2xl"
+                priority
+                sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
               />
             </div>
 

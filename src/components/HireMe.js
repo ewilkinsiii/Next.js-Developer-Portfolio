@@ -6,7 +6,7 @@ const HireMe = () => {
   return (
     <div
       className="fixed left-4 bottom-4 flex items-center justify-center overflow-hidden 
-    md:right-8 md:left-auto md:top-0 md:bottom-auto md:absolute sm:right-0 xl:mb-20 lg:mb-20"
+    md:right-8 md:left-auto md:top-0 md:bottom-auto md:absolute sm:right-0 mb-20 xl:mb-40 lg:mb-40"
     >
       <div className="w-48 h-auto items-center justify-center relative md:w-24">
         <CircularText

@@ -34,7 +34,7 @@ export default function Home() {
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
                 text="Turning Vision Into Reality With Code And Design."
-                className="!text-6xl !text-left xl:!text-5x1 lg:!text-center
+                className="!text-6xl !text-left xl:!text-5xl lg:!text-center
                 lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
@@ -71,7 +71,7 @@ export default function Home() {
         </Layout>
 
         <HireMe />
-        <div className="absolute right-4 -bottom-10 inline-block w-24">
+        <div className="absolute right-8 -bottom-1 inline-block w-24">
           <Image
             src={lightBulb}
             alt="EugeneWilkins"

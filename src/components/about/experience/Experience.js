@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
-import ExperienceItems from "./ExperienceItem";
-import getAllExperiences from "../../dummy data/experience";
+import getAllExperiences from "../../../../dummy data/experience";
 import ExperienceList from "./ExperienceList";
 
 const Experience = () => {

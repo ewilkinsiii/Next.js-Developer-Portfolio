@@ -1,5 +1,5 @@
 import React, { Fragment, useRef } from "react";
-import LiIcon from "./LiIcon";
+import LiIcon from "../../LiIcon";
 import { motion, useScroll } from "framer-motion";
 
 const ExperienceItem = (props) => {

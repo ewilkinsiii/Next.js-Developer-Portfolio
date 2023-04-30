@@ -6,7 +6,7 @@ import React, { useRef, useEffect } from "react";
 import profilePic from "../../public/images/profile/developer-pic-2.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
-import Experience from "@/components/Experience";
+import Experience from "@/components/about/experience/Experience";
 import Education from "@/components/Education";
 import TransitionEffect from "@/components/TransitionEffect";
 

@@ -20,20 +20,20 @@ const ExperienceItem = (props) => {
           whileInView={{ y: 0 }}
           transition={{ duration: 0.5, type: "spring" }}
         >
-          <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
+          <h3 className="text-2xl font-bold capitalize sm:text-xl xs:text-lg">
             {props.position}&nbsp;
             <a
               href={props.companyLink}
               target="_blank"
-              className="text-primary capitalize dark:text-primaryDark"
+              className="capitalize text-primary dark:text-primaryDark"
             >
               @{props.company}
             </a>
           </h3>
-          <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
+          <span className="font-medium capitalize text-dark/75 dark:text-light/75 xs:text-sm">
             {props.time} | {props.address}
           </span>
-          <p className="font-medium w-full md:text-sm">{props.description}</p>
+          <p className="w-full font-medium md:text-sm">{props.description}</p>
         </motion.div>
       </li>
     </Fragment>

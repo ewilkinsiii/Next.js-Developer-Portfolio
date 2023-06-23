@@ -1,20 +1,17 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { motion } from "framer-motion";
 import SkillItems from "./SkillItems";
 
 const Skills = () => {
   return (
-    <>
+    <Fragment>
       <h2 className="font-bold text-8xl mt-64 w-full text-center md:text-6xl md:mt-32">
         {" "}
         Skills
       </h2>
       <div
         className="w-full h-screen relative flex items-center justify-center rounded-full 
-      bg-circularLight dark:bg-circularDark lg:h-[80vh] sm:h-[60vh] xs:h-[50vh]
-      lg:bg-circularLightLg lg:dark:bg-circularDarkLg
-      md:bg-circularLightMd md:dark:bg-circularDarkMd
-      sm:bg-circularLightSm sm:dark:bg-circularDarkSm
+      bg-brain lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] bg-auto bg-no-repeat bg-center
       "
       >
         <motion.div
@@ -27,16 +24,20 @@ const Skills = () => {
           Web
         </motion.div>
         <SkillItems name="HTML" x="-25vw" y="2vw" />
-        <SkillItems name="CSS" x="-5vw" y="-10vw" />
+        <SkillItems name="Postgres SQL" x="-15vw" y="12vw" />
+        <SkillItems name="GraphQL" x="-10vw" y="-10vw" />
+        <SkillItems name="Ruby on Rails" x="-15vw" y="-5vw" />
+        <SkillItems name="Git" x="-10vw" y="00vw" />
+        <SkillItems name="CSS" x="15vw" y="-10vw" />
         <SkillItems name="Javascript" x="20vw" y="6vw" />
-        <SkillItems name="ReactJS" x="0vw" y="12vw" />
-        <SkillItems name="NextJS" x="20vw" y="-15vw" />
-        <SkillItems name="Web Design" x="32vw" y="-5vw" />
-        <SkillItems name="Figma" x="0vw" y="-20vw" />
-        <SkillItems name="Firebase" x="-25vw" y="18vw" />
-        <SkillItems name="Tailwind CSS" x="18vw" y="18vw" />
+        <SkillItems name="ReactJS" x="5vw" y="12vw" />
+        <SkillItems name="NextJS" x="-10vw" y="-15vw" />
+        <SkillItems name="Web Design" x="15vw" y="-5vw" />
+        <SkillItems name="Figma" x="5vw" y="-15vw" />
+        <SkillItems name="Firebase" x="-5vw" y="18vw" />
+        <SkillItems name="Tailwind CSS" x="16vw" y="18vw" />
       </div>
-    </>
+    </Fragment>
   );
 };
 

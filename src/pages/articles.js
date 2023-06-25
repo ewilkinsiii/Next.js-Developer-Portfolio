@@ -4,14 +4,14 @@ import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
-import article1 from "../../public/images/articles/pagination component in reactjs.jpg";
-import article2 from "../../public/images/articles/create loading screen in react js.jpg";
-import article3 from "../../public/images/articles/create modal component in react using react portals.png";
-import article4 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
-import article5 from "../../public/images/articles/smooth scrolling in reactjs.png";
-import article6 from "../../public/images/articles/todo list app built using react redux and framer motion.png";
-import article7 from "../../public/images/articles/What is higher order component in React.jpg";
-import article8 from "../../public/images/articles/What is Redux with easy explanation.png";
+import article1 from "../../public/images/articles/pagination-component-in-reactjs.png";
+import article2 from "../../public/images/articles/create-loading-screen-in-react-js.jpg";
+import article3 from "../../public/images/articles/create-modal-component-in-react-using-react-portals.png";
+import article4 from "../../public/images/articles/form-validation-in-reactjs-using-custom-react-hook.png";
+import article5 from "../../public/images/articles/smooth-scrolling-in-reactjs.png";
+import article6 from "../../public/images/articles/todo-list-app-built-using-react-redux-and-framer-motion.png";
+import article7 from "../../public/images/articles/What-is-higher-order-component-in-React.jpg";
+import article8 from "../../public/images/articles/What-is-Redux-with-easy-explanation.png";
 
 import { motion, useMotionValue } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -44,7 +44,7 @@ const MovingImg = ({ title, img, link }) => {
       onMouseMove={mouseHandler}
       onMouseLeave={mouseLeaveHandler}
     >
-      <h2 className="capitalize text-xl font-semibold hover:underline">
+      <h2 className="text-xl font-semibold capitalize hover:underline">
         {title}
       </h2>
       <FramerImage
@@ -66,17 +66,10 @@ const Article = ({ img, title, date, link }) => {
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
       viewport={{ once: true }}
-      className="relative w-full p-4 py-6 my-4 rounded-xl 
-    flex items-center justify-between bg-light text-dark
-    first:mt-0 border border-solid border-dark border-r-4 border-b-4
-    dark:border-light dark:bg-dark dark:text-light
-    sm:flex-col"
+      className="relative flex items-center justify-between w-full p-4 py-6 my-4 border border-b-4 border-r-4 border-solid rounded-xl bg-light text-dark first:mt-0 border-dark dark:border-light dark:bg-dark dark:text-light sm:flex-col"
     >
       <MovingImg img={img} title={title} link={link} />
-      <span
-        className="text-primary font-semibold pl-4 dark:text-primaryDark 
-      sm:self-start sm:pl-0 xs:text-sm"
-      >
+      <span className="pl-4 font-semibold text-primary dark:text-primaryDark sm:self-start sm:pl-0 xs:text-sm">
         {date}
       </span>
     </motion.li>
@@ -85,16 +78,12 @@ const Article = ({ img, title, date, link }) => {
 
 const FeaturedArticle = ({ img, title, time, summary, link }) => {
   return (
-    <li
-      className="relative col-span-1 w-full p-4 bg-light 
-    border border-solid border-dark rounded-2xl border-r-4 border-b-4
-    dark:bg-dark dark:border-light"
-    >
+    <li className="relative w-full col-span-1 p-4 border border-b-4 border-r-4 border-solid bg-light border-dark rounded-2xl dark:bg-dark dark:border-light">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
       <Link
         href={link}
         target="_blank"
-        className="w-full inline-block cursor-pointer overflow-hidden rounded-lg"
+        className="inline-block w-full overflow-hidden rounded-lg cursor-pointer"
       >
         <FramerImage
           src={img}
@@ -109,12 +98,12 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
         />
       </Link>
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-2xl font-bold my-2  mt-4 hover:underline xs:text-lg">
+        <h2 className="my-2 mt-4 text-2xl font-bold capitalize hover:underline xs:text-lg">
           {title}
         </h2>
       </Link>
-      <p className="text-sm mb-2">{summary}</p>
-      <span className="text-primary font-semibold dark:text-primaryDark">
+      <p className="mb-2 text-sm">{summary}</p>
+      <span className="font-semibold text-primary dark:text-primaryDark">
         {time} read
       </span>
     </li>
@@ -129,7 +118,7 @@ const articles = () => {
         <meta name="articles" content="blog articles" />
       </Head>
       <TransitionEffect />
-      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
+      <main className="flex flex-col items-center justify-center w-full mb-16 overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text="Words Can Change The World!"
@@ -156,7 +145,7 @@ const articles = () => {
             />
           </ul>
 
-          <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
+          <h2 className="w-full my-16 mt-32 text-4xl font-bold text-center">
             All Articles
           </h2>
           <ul>
